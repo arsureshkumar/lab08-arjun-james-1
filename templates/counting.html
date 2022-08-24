@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Convert ctof{% endblock %}
+
+{% block content %}
+
+<p>Enter 3 strings to see how many times each string is contained in the next largest.</p>
+
+<form action="/counting_result">
+  <p>Biggest string:<input type="text" name="string_a" value=""></p>
+  <p>Next string:<input type="text" name="string_b" value=""></p>
+  <p>smallest string:<input type="text" name="string_c" value=""></p>
+  <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
